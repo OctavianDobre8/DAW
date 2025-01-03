@@ -2,10 +2,10 @@
 <template>
   <div>
     <h1 class="text-center">Welcome to My Website</h1>
-    <p class="text-center">Fetching motivational quotes...</p>
+    
 
     <div v-if="loading" class="text-center">
-      <p>Loading...</p>
+      <p class="text-center">Fetching motivational quotes...</p>
     </div>
     <div v-else>
       <blockquote v-for="quote in quotes.slice(0, 3)" :key="quote.text" class="blockquote">
