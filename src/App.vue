@@ -1,35 +1,48 @@
 <template>
   <div id="app">
-    <!-- Navbar -->
     <Navbar />
-
-    <!-- Main Content -->
     <main class="container mt-4">
-      <router-view />
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
-
-    <!-- Footer -->
     <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from './components/NavbarComponent.vue';
+import Footer from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
     Navbar,
+    Footer,
   },
 };
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 #app {
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 </style>

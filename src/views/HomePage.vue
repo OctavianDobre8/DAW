@@ -25,13 +25,14 @@ export default {
     return {
       quotes: [],
       loading: true,
+      error: null
     };
   },
   async created() {
     try {
       this.quotes = await fetchQuotes();
     } catch (error) {
-      console.error('Error fetching quotes:', error);
+      this.error = error.message;
     } finally {
       this.loading = false;
     }

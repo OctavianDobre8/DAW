@@ -1,0 +1,28 @@
+// Color Scheme
+$primary-color: #2563eb;
+$secondary-color: #1e40af;
+$accent-color: #f59e0b;
+$success-color: #10b981;
+$error-color: #ef4444;
+$text-color: #1e293b;
+$background-color: #f8fafc;
+
+// Typography
+$base-font-size: 16px;
+$font-family: 'Inter', system-ui, -apple-system, sans-serif;
+$heading-font-family: 'Poppins', $font-family;
+$line-height: 1.6;
+
+// Spacing
+$spacing-unit: 1rem;
+$spacing-xs: $spacing-unit * 0.25;
+$spacing-sm: $spacing-unit * 0.5;
+$spacing-md: $spacing-unit;
+$spacing-lg: $spacing-unit * 1.5;
+$spacing-xl: $spacing-unit * 2;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
