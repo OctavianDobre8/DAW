@@ -14,13 +14,13 @@
 
 <script>
 import Navbar from './components/NavbarComponent.vue';
-import Footer from './components/FooterComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer,
+    FooterComponent,
   },
 };
 </script>

@@ -1,7 +1,7 @@
 # Prism Advisory - Business Consulting Website
 
 ## Live Demo
-Visit our website: [Prism Advisory](https://yourusername.github.io/prism-advisory/)
+Visit our website: [Prism Advisory](https://daw-lac.vercel.app/)
 
 ## About
 Modern business consulting website showcasing:
@@ -18,6 +18,7 @@ Modern business consulting website showcasing:
 - Dynamic quote generation
 - Contact form with validation
 - Modern UI/UX
+- Deployment using Vercel
 
 ## Tech Stack
 - Vue.js 3.0
@@ -27,9 +28,6 @@ Modern business consulting website showcasing:
 - Axios
 - DummyJSON API
 
-## Deployment
-Automatically deployed to GitHub Pages using GitHub Actions.
-Updates go live when changes are pushed to the `main` branch.
 
 ## Development
 This project is open source. To contribute:
